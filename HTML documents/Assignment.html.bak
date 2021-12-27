@@ -4,9 +4,9 @@
 		<title>HOME</title>
 		<meta charset="utf-8">
 			<nav>
-				<a href="C:\Users\jacob\Documents\GitHub\HTML-and-CSS-Projects\HTML documents\Assignment.html">HOME</a>
-				<a href="C:\Users\jacob\Documents\GitHub\HTML-and-CSS-Projects\HTML documents\Dog.html">DOG_PICTURE</a>
-				<a href="C:\Users\jacob\Documents\GitHub\HTML-and-CSS-Projects\HTML documents\Dog_Video.html">DOG_VIDEO</a>
+				<a href="Assignment.html">HOME</a>
+				<a href="Dog.html">DOG_PICTURE</a>
+				<a href="Dog_Video.html">DOG_VIDEO</a>
 			</nav>
 	</head>
 	<body>
@@ -23,4 +23,7 @@
 			<h2>Embedded Youtube Video</h2>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/bcfX2jNEA5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</body>
+		<script>
+		alert("hello, world!");
+		</script>
 </html>
