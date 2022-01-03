@@ -1,104 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>NHL Website Project</title>
+		<title>Coffee</title>
 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/one-page-website.css">
 	</head>
 	<body>
 
-
 		<!--NAV-->
 		<nav>
-			<ul>
-				<a href="#home" id="link"><li>HOME</li></a>
-				<a href="#teams"><li>TEAMS</li></a>
-				<a href="#players"><li>PLAYERS</li></a>
-				<a href="#contact"><li>CONTACT</li></a>
-			</ul>
+			<div class="wrap">
+				<div class="menu-container">
+					<div class="menu">
+						<ul>
+							<a href="#home" id="link"><li>HOME</li></a>
+							<a href="#gallery"><li>GALLERY</li></a>
+							<a href="#contact"><li>CONTACT</li></a>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
 		<!--END NAV-->
 		
 		<!--HOME-->
 			<div id="home">
-				<h1>NHL Statistics</h1>
+				<h1>Home</h1>
 			</div>
 		<!--END HOME-->
 		
-		<!--TEAMS-->
+		<!--GALLERY-->
 		<section>
-			<div id="teams">
-				<h2>Teams</h2>
+			<div id="gallery">
+				<h2>Gallery</h2>
 			</div>
 			
 				<!--PHOTO CONTAINER 1-->
 					<img src=".\images\thumb\thumbnail_1.png" height= "100" width="150" alt="Carolina Hurricanes logo">
 					<div>
-						<h3>Carolina Hurricanes</h3>
+						<h3></h3>
 					</div>
 				<!--END PHOTO CONTAINER 1-->
 				
 				<!--PHOTO CONTAINER 2-->
 					<img src=".\images\thumb\thumbnail_2.png" height= "100" width="150" alt="Boston Bruins logo">
 					<div>
-						<h3>Boston Bruins</h3>
+						<h3></h3>
 					</div>
 				<!--END PHOTO CONTAINER 2-->
 				
 				<!--PHOTO CONTAINER 3-->
 					<img src=".\images\thumb\thumbnail_3.png" height= "100" width="150" alt="Arizona Coyotes logo">
 					<div>
-						<h3>Arizona Coyotes</h3>
+						<h3></h3>
 					</div>
 				<!--END PHOTO CONTAINER 3-->
 				
 				<!--PHOTO CONTAINER 4-->
 					<img src=".\images\thumb\thumbnail_4.png" height= "100" width="150" alt="Anaheim Ducks logo">
 					<div>
-						<h3>Anaheim Ducks</h3>
+						<h3></h3>
 					</div>
 				<!--END PHOTO CONTAINER 4-->
 		</section>
-		
-		<section>
-			<div id="players">
-				<h2>Players</h2>
-					<ul>
-					Sebastian Aho<br>
-					Patrice Bergeron<br>
-					Travis Boyd<br>
-					Sam Carrick<br>
-					</ul>
-					<iframe width="560" height="315" 
-					src="https://www.youtube-nocookie.com/embed/AqeDCJJI_Lk" 
-					title="YouTube video player" frameborder="0" 
-					allow="accelerometer; autoplay; clipboard-write; 
-					encrypted-media; gyroscope; picture-in-picture" 
-					allowfullscreen></iframe>
-			</div>
-		</section>
-		
+
 		<section>
 			<div id="contact">
 				<h2>Contact Form</h2>
 				<p>Sign up for a weekly newsletter!</p>
-				<form action="" method="post">
-									<input class="rsvp" type="text" value="First Name">
-									<input class="rsvp" type="text" value="Last Name">
-									<input class="rsvp" type="text" value="Email Address">
-									<input class="rsvp" type="text" value="Phone Number">
-									<div class="form-spacer">
-									</div>
-									<div>
-										<input type="submit" value="Submit">
-									</div>
-								</form>
+					<div class="input-boxes">
+						<form action="" method="post">
+						<input class="rsvp" type="text" value="First Name">
+						<input class="rsvp" type="text" value="Last Name">
+						<input class="rsvp" type="text" value="Email Address">
+						<input class="rsvp" type="text" value="Phone Number">
+							<div class="form-spacer"></div>									</div>
+							<div>
+								<input type="submit" value="Submit">
+							</div>
+					</div>
+						</form>
 			</div>
 		</section>
 	</body>
 	<footer>
 		<h4>Contact information</h4>
-		<p>(555)555-5555</p>
-		<p>100 Washington Blvd.&nbsp;&nbsp; New York City, &nbsp;New York &nbsp;15965</p>
-		<p>NHL@NHL.com</p>
+			<p>(555)555-5555<br>
+			100 Washington Blvd.&nbsp;&nbsp; New York, &nbsp;New York &nbsp;15965</p>
 	</footer>
 </html>
