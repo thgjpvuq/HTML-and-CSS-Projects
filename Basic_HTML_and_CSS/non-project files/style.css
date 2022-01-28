@@ -1,0 +1,57 @@
+html    {
+    scroll-behavior: smooth;
+}
+
+body   {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+body.fade-out   {
+    opacity: 0;
+    transition: none;
+}
+
+/* button on bottom of page to open the form */
+.open-button    {
+    background-color: #999;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 300px;
+}
+
+/* popup for hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid blue;
+    z-index: 9;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+
+/* full width input fields */
+.form-container input[type=text], .form-container input[type=tel]   {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #999;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=tel]:focus   {
+    background-color: white;
+    outline: none;
+}

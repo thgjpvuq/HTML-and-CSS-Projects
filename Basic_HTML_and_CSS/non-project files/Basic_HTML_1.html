@@ -4,12 +4,110 @@
 		<title>Basic HTML</title>
 		<meta charset="UTF-8">
 		<meta name="author" content="Jacob">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+		<a href="#middle">Middle</a>
+		<a href="#bottom">Bottom</a>
+		<section>
+		<script>
+			document.body.classList.add('fade-out');
+			window.addEventListener('DOMContentLoaded', () =>	{
+				document.body.classList.remove('fade-out');
+			});
+		</script>
 		<header>
-			<h4>Basic HTML Template</h4>
+			<h4 style="font-size: 8vw;">Basic HTML Template</h4>
 		</header>
 		<p>Introduction to basic HTML syntax</p>
 		<p>added another paragraph</p>
+		</section>
+		<script>
+			function validateForm()	{
+				let x = document.forms['mForm']['fname'].value;
+				if (x == "")	{
+					alert('Please fill out all boxes of the form.');
+					return false;
+				}
+				let y = document.forms['mForm']['lname'].value;
+				if (y == "")	{
+					alert('Please fill out all boxes of the form.');
+					return false;
+				}
+				let z = document.forms['mForm']['phone'].value;
+				if (z == "")	{
+					alert('Please fill out all boxes of the form.');
+					return false;
+				}
+			}
+		</script>
+		<script>
+			function openForm()	{
+				document.getElementById("myForm").style.display = "block";
+			}
+
+			function closeForm()	{
+				document.getElementById("myForm").style.display = "none";
+			}
+		</script>
+
+		<button class="open-button" onclick="openForm()">Open Form</button>
+
+		<section>
+			<div class="form-popup" id="myForm">
+			<form name="mForm" onsubmit="return validateForm()">
+				<p>First name:</p>
+				<input type="text" id="fname" name="fname"><br>
+				<p>Last name:</p>
+				<input type="text" id="lname" name="lname"><br>
+				<p>Phone Number</p>
+				<input type="tel" id="phone" name="phone" value="###-###-####" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+				<input type="submit" value="Submit">
+				<button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+			</form>
+			</div>
+		</section>
+		<style>
+			#move	{
+				width: 100px;
+				height: 100px;
+				background: green;
+				position: relative;
+				animation: mymove 5s infinite;
+			}
+
+			@keyframes mymove  {
+		    	from {top: 0px;}
+    			to {top: 200px;}
+			}
+		</style>
+		<div id="move"></div>
+
+		<section>
+			<style>
+				@keyframes zoomingoutsinglefeatured	{
+					0%	{
+						transform: scale(1,1);
+					}
+					50%	{
+						transform: scale(1.5,1.5);
+					}
+					100%	{
+						transform: scale(1,1);
+					}
+				}
+
+				.photo-animation	{
+					animation: zoomingoutsinglefeatured 5s forwards;
+				}
+			</style>
+			<img src="apple.png" class="photo-animation" height="300" width="500" alt="apple">
+		</section>
+		<section>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p id="middle">Middle</p>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<p id="bottom">Bottom</p>
+		</section>
 	</body>
 </html>

@@ -1,0 +1,56 @@
+#slideshow    {
+    margin: 50px auto;
+    position: relative;
+    width: 240px;
+    height: 240px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow > div    {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+div.sticky    {
+    position: absolute;
+    bottom: 100%;
+    right: 100%;
+}
+
+.open-button    {
+    background-color: #999;
+    color: white;
+    border: none;
+    padding: 16px 20px;
+    cursor: pointer;
+    position: sticky;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+}
+
+.form-popup    {
+    display: none;
+    position: sticky;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid blueviolet;
+    z-index: 9;
+}
+
+.form-container    {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text]    {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: brown;
+}

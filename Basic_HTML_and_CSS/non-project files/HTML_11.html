@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+  <h1>Heading</h1>
+  <hr>
+  <p id="myCat"></p>
+  <p id="dblclick" ondblclick="myfunction()">Double click here!</p>
+  <script>
+    // var cat = {name: 'Leo', age: 7};
+    // // To convert objects into strings
+    // var JSONstring = JSON.stringify(cat);
+    // document.getElementById('myCat').innerHTML = JSONstring;
+    // var catstring = '{"name": "Leo","age": "7"}';
+    // To convert strings into objects
+    // var JSONstring = JSON.parse(catstring);
+    // document.getElementById('myCat').innerHTML = JSONstring.name + 
+    //   ' the cat' ;
+    // localStorage.setItem("Name", "Leo");
+    // document.getElementById("myCat").innerHTML = localStorage.getItem("Name");
+    
+    function myfunction()    {
+      document.getElementById("dblclick").style.color = "blue";
+    }
+  </script>
+</body>
+</html>
